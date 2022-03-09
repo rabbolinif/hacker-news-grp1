@@ -13,7 +13,7 @@ const SearchBar = ({ setPage, setSearchQuery }) => {
   return (
     <form onSubmit={handleSubmit}>
       <label htmlFor="header-search">
-        <span className="visually-hidden">Search blog posts</span>
+        <span className="visually-hidden">Search HeckerNews: </span>
       </label>
       <input
         value={userInput}

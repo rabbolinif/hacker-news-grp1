@@ -5,7 +5,7 @@ import News from "./components/News";
 
 const App = () => {
   const [searchQuery, setSearchQuery] = useState("react");
-  const [page, setPage] = useState(5);
+  const [page, setPage] = useState(0);
   const [news, setNews] = useState([]);
 
   useEffect(() => {

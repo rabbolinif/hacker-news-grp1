@@ -3,7 +3,10 @@ const News = ({ news }) => {
       <ul>
         {news &&
           news.map((el) => {
-            return <li key={el.objectID}>{el.title}</li>;
+            return <div>
+                <li key={el.objectID}>{<a href={el.url}>{el.title}</a>} 
+                <br></br>- by {el.author}</li><p></p>
+            </div>
           })}
       </ul>
     );
